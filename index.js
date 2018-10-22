@@ -147,7 +147,7 @@ exports.decorateTerm = (Term, { React, notify }) => {
       });
       this._particles = this._particles
         .slice(Math.max(this._particles.length - MAX_PARTICLES, 0))
-        .filter((particle) => particle.alpha > 0.1);
+        .filter((particle) => particle.alpha > 0.001);
       window.requestAnimationFrame(this._drawFrame);
     }
 
